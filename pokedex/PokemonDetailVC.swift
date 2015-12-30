@@ -9,10 +9,15 @@
 import UIKit
 
 class PokemonDetailVC: UIViewController {
+    @IBOutlet weak var nameLbl: UILabel!
     
     var pokemon: Pokemon!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(pokemon.name)
+        nameLbl.text = pokemon.name
+    }
+    
+    @IBAction func onBackTapped(btn: UIButton!){
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
