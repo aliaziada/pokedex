@@ -81,6 +81,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="uCd-uA-HNK">
                                 <rect key="frame" x="0.0" y="99" width="600" height="501"/>
                                 <animations/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="99" width="800" height="501"/>
+                                </variation>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-hc-HhK">
                                 <rect key="frame" x="20" y="119" width="560" height="461"/>
@@ -136,11 +139,17 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="119" width="760" height="461"/>
+                                </variation>
                             </collectionView>
                             <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="9iJ-ac-VsT">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <animations/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="55" width="800" height="44"/>
+                                </variation>
                             </searchBar>
                         </subviews>
                         <animations/>
@@ -254,8 +263,12 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <animations/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="b8A-JD-NXc"/>
-                                                    <constraint firstAttribute="width" constant="120" id="t7A-y0-dZI"/>
+                                                    <constraint firstAttribute="height" constant="120" id="b8A-JD-NXc">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="120" id="t7A-y0-dZI">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                                    </constraint>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Z2I-Ic-NMe">
@@ -459,7 +472,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="9DF-oi-Lt8" id="kNT-bN-Jv1"/>
+                        <outlet property="currentEvoImg" destination="ZO2-pg-iKR" id="Fh2-cT-nph"/>
+                        <outlet property="defenseLbl" destination="YyB-DJ-fCh" id="lql-ef-P2t"/>
+                        <outlet property="descriptionLbl" destination="Z2I-Ic-NMe" id="EyM-qn-kBT"/>
+                        <outlet property="evoLbl" destination="I6U-NQ-aY5" id="e6I-Ex-hIi"/>
+                        <outlet property="heightLbl" destination="LDe-2v-ktR" id="Eab-cv-CtB"/>
+                        <outlet property="mainImg" destination="yP7-EA-Tj1" id="iS0-9z-pXn"/>
                         <outlet property="nameLbl" destination="DYo-Bj-bBL" id="KLh-xz-6vj"/>
+                        <outlet property="nextEvoImg" destination="mMz-Kh-W5o" id="ZTe-n8-5qQ"/>
+                        <outlet property="pokedexLbl" destination="jik-kG-5Hm" id="p7N-II-f0C"/>
+                        <outlet property="typeLbl" destination="w4C-b0-jTa" id="qMV-0C-uN8"/>
+                        <outlet property="weightLbl" destination="bJq-79-9n0" id="BaJ-DT-OgF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7j-1E-WwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
