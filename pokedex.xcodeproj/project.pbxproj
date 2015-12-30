@@ -45,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D89046C11C33D9950001F6C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8B067181C32C28B00AB2A44 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		D8B0670A1C32C28B00AB2A44 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +72,10 @@
 		D8B067151C32C28B00AB2A44 /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				D89046C11C33D9950001F6C3 /* Controller */,
 				D8B0672A1C32E6A300AB2A44 /* Model */,
 				D8B067311C32F3FC00AB2A44 /* View */,
 				D8B067161C32C28B00AB2A44 /* AppDelegate.swift */,
-				D8B067181C32C28B00AB2A44 /* ViewController.swift */,
 				D8B0672D1C32EB4000AB2A44 /* music.mp3 */,
 				D8B0672E1C32EB4000AB2A44 /* pokemon.ttf */,
 				D8B067281C32D32600AB2A44 /* pokemon.csv */,
