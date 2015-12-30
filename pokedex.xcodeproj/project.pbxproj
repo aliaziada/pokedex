@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D89046C41C33EEC50001F6C3 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89046C31C33EEC50001F6C3 /* csv.swift */; };
+		D89046C71C3408E70001F6C3 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89046C61C3408E70001F6C3 /* PokemonDetailVC.swift */; };
 		D8B067171C32C28B00AB2A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B067161C32C28B00AB2A44 /* AppDelegate.swift */; };
 		D8B067191C32C28B00AB2A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B067181C32C28B00AB2A44 /* ViewController.swift */; };
 		D8B0671C1C32C28B00AB2A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B0671A1C32C28B00AB2A44 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		D89046C31C33EEC50001F6C3 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		D89046C61C3408E70001F6C3 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		D8B067131C32C28B00AB2A44 /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B067161C32C28B00AB2A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B067181C32C28B00AB2A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				D8B067181C32C28B00AB2A44 /* ViewController.swift */,
+				D89046C61C3408E70001F6C3 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				D8B067331C32F44500AB2A44 /* PokeCell.swift in Sources */,
 				D8B067191C32C28B00AB2A44 /* ViewController.swift in Sources */,
 				D8B067171C32C28B00AB2A44 /* AppDelegate.swift in Sources */,
+				D89046C71C3408E70001F6C3 /* PokemonDetailVC.swift in Sources */,
 				D8B0672C1C32E6C100AB2A44 /* Pokemon.swift in Sources */,
 				D89046C41C33EEC50001F6C3 /* csv.swift in Sources */,
 			);

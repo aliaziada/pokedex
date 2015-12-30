@@ -66,7 +66,15 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var poke: Pokemon!
         
+        if searchMode {
+            poke = filteredPokemon[indexPath.row]
+        }else{
+            poke = pokemon[indexPath.row]
+        }
+        
+        performSegueWithIdentifier("PokemonDetailVC", sender: poke)
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -116,6 +124,16 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokemonDetailVC"{
+            if let DetailVC = segue.destinationViewController as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    DetailVC.pokemon = poke
+                }
+            }
+        }
     }
 }
 
