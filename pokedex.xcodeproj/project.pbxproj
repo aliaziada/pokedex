@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D2B5FCD0287FDE9F6086DBD7 /* Pods_pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3332D22CE09B6A1CBA8D8E4 /* Pods_pokedex.framework */; };
+		D877F9C81C352E9A007F754D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9C71C352E9A007F754D /* Constants.swift */; };
 		D89046C41C33EEC50001F6C3 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89046C31C33EEC50001F6C3 /* csv.swift */; };
 		D89046C71C3408E70001F6C3 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89046C61C3408E70001F6C3 /* PokemonDetailVC.swift */; };
 		D8B067171C32C28B00AB2A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B067161C32C28B00AB2A44 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		2D7B23DBAF64AFEA5477ECB8 /* Pods-pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex/Pods-pokedex.debug.xcconfig"; sourceTree = "<group>"; };
+		D877F9C71C352E9A007F754D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D89046C31C33EEC50001F6C3 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		D89046C61C3408E70001F6C3 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		D8B067131C32C28B00AB2A44 /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D89046C31C33EEC50001F6C3 /* csv.swift */,
+				D877F9C71C352E9A007F754D /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				D8B067191C32C28B00AB2A44 /* ViewController.swift in Sources */,
 				D8B067171C32C28B00AB2A44 /* AppDelegate.swift in Sources */,
 				D89046C71C3408E70001F6C3 /* PokemonDetailVC.swift in Sources */,
+				D877F9C81C352E9A007F754D /* Constants.swift in Sources */,
 				D8B0672C1C32E6C100AB2A44 /* Pokemon.swift in Sources */,
 				D89046C41C33EEC50001F6C3 /* csv.swift in Sources */,
 			);
