@@ -26,15 +26,31 @@ class PokemonDetailVC: UIViewController {
     var pokemon: Pokemon!
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLbl.text = pokemon.name
+        nameLbl.text = pokemon.name.capitalizedString
         mainImg.image = UIImage(named: "\(pokemon.pokedexId)")
         pokedexLbl.text = "\(pokemon.pokedexId)"
         
         pokemon.downloadPokemonDetails { () -> () in
-            
+            self.updateUI()
         }
     }
-    
+    func updateUI(){
+        descriptionLbl.text = pokemon.description
+        typeLbl.text = pokemon.type
+        defenseLbl.text = pokemon.defense
+        heightLbl.text = pokemon.height
+        weightLbl.text = pokemon.weight
+        attackLbl.text = pokemon.attack
+        evoLbl.text = pokemon.nextEvolutionTxt
+        currentEvoImg.image = UIImage(named: "\(pokemon.pokedexId)")
+        if pokemon.nextEvolutionId != "" {
+            nextEvoImg.hidden = false
+            nextEvoImg.image = UIImage(named: pokemon.nextEvolutionId)
+        }else{
+            evoLbl.text = "No Evolution"
+            nextEvoImg.hidden = true
+        }
+    }
     @IBAction func onBackTapped(btn: UIButton!){
         dismissViewControllerAnimated(true, completion: nil)
     }
